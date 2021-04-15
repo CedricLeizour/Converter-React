@@ -21,7 +21,7 @@ const Currencies = ({ currencies }) => (
   </div>
 );
 
-Currencies.PropTypes = {
+Currencies.propTypes = {
   currencies: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
