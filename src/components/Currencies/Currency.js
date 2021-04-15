@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 // == Composant
 const Currency = ({ name }) => (
-  <li>{name}</li>
+  <li className="currency">{name}</li>
 );
 
 Currency.propTypes = {

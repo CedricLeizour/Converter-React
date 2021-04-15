@@ -1,5 +1,5 @@
 // == Import npm
-import React from 'react'
+import React, { Component } from 'react'
 
 // == Import
 import currenciesData from 'src/data/currencies';
@@ -12,13 +12,26 @@ import Amount from 'src/components/Amount';
 import './styles.scss';
 
 // == Composant
-const Converter = () => (
-  <div className="converter">
-    <Header baseAmount={1} />
-    <Currencies currencies={currenciesData}/>
-    <Amount />
-  </div>
-);
+class Converter extends Component {
+  constructor(props) {
+    super(props);
+    // State représente l'état du composant, c'est un objet et il doit être immutable
+    this.state = {
+      open: true,
+    };
+  }
+
+  render() {
+    const { open } = this.state;
+    return (
+      <div className="converter">
+        <Header baseAmount={1} />
+        { open && <Currencies currencies={currenciesData} />}
+        <Amount currency="United States Dollar" value={1.094103} />
+      </div>
+    );
+  }
+}
 
 // == Export
 export default Converter;
