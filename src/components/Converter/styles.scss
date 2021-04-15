@@ -7,3 +7,26 @@
   text-align: center;
   padding: vars.$gutter;
 }
+
+.toggler {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: -25px auto;
+  display: block;
+  border-radius: 50%;
+  background-color: vars.$color-light;
+  border: 5px solid vars.$color;
+  color: vars.$color;
+  font-size: 2em;
+  font-weight: bold;
+  transition: all vars.$transition-fast;
+  
+  &:hover { // .toggler:hover
+    background-color: vars.$color-alt;
+  }
+
+  &--open { //.toggler--open
+    transform: rotate(90deg);
+  }
+}

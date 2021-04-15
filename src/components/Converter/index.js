@@ -8,6 +8,7 @@ import currenciesData from 'src/data/currencies';
 import Header from 'src/components/Header';
 import Currencies from 'src/components/Currencies';
 import Amount from 'src/components/Amount';
+import Toggler from 'src/components/Toggler';
 
 import './styles.scss';
 
@@ -17,8 +18,15 @@ class Converter extends Component {
     super(props);
     // State représente l'état du composant, c'est un objet et il doit être immutable
     this.state = {
-      open: true,
+      open: false,
     };
+  }
+
+  handleToggleClick = () => {
+    const { open } = this.state;
+    this.setState({
+      open: !open,
+    });
   }
 
   render() {
@@ -26,6 +34,7 @@ class Converter extends Component {
     return (
       <div className="converter">
         <Header baseAmount={1} />
+        <Toggler open={open} handleOnClick={this.handleToggleClick} />
         { open && <Currencies currencies={currenciesData} />}
         <Amount currency="United States Dollar" value={1.094103} />
       </div>
