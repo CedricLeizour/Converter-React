@@ -32,7 +32,8 @@
   color: vars.$color;
   font: inherit;
   &::placeholder {
-    color: vars.$color-alt; 
+    color: vars.$color-alt;
+    font-weight: bold;
   }
 }
 

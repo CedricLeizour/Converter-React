@@ -9,7 +9,8 @@ import './style.scss';
 const Header = ({baseAmount}) => (
   <div className="header">
     <h1 className="header__title">Converter</h1>
-    <p className="header__amount">{baseAmount} euro</p>
+    <p className="header__amount">{baseAmount}</p>
+    <p className="header__value">Euro</p>
   </div>
 );
 

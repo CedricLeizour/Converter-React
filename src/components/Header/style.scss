@@ -9,10 +9,19 @@
   & &__title { // .header .header__title
     font-size: 2em;
     font-weight: 700;
+    margin-bottom: 1em;
   }
 
   &__amount { // .header__amount
     margin-top: vars.$gutter;
     font-size: 1.3em;
+    font-weight: bold;
+    font-size: 2em;
   }
-}
+
+  &__value {
+      font-size: 1.3em;
+      margin-top: vars.$gutter;
+    }
+  }
+

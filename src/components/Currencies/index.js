@@ -49,7 +49,7 @@ class Currencies extends PureComponent {
           className="currencies__search"
           type="text"
           value={search}
-          placeholder="Filtrer les devises"
+          placeholder="Rechercher ici"
           onChange={onSearch}
         />
         <ul className="currencies__list">
