@@ -23,3 +23,20 @@
     transition-duration: vars.$transition-fast;
   }
 }
+
+.currencies__search {
+  padding: vars.$gutter;
+  margin-top: vars.$gutter;
+  width: 100%;
+  border: 0;
+  color: vars.$color;
+  font: inherit;
+  &::placeholder {
+    color: vars.$color-alt; 
+  }
+}
+
+.currency--active {
+  background-color: vars.$color;
+  color: vars.$color-light;
+}

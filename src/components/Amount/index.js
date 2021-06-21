@@ -7,12 +7,12 @@ import PropTypes from 'prop-types';
 import './style.scss';
 
 // == Composant
-const Amount = ({ currency, value }) => (
+const Amount = React.memo(({ currency, value }) => (
   <div className="amount">
     <p className="amount__value">{value.toFixed(2)}</p>
     <p className="amount__currency">{currency}</p>
   </div>
-);
+));
 
 Amount.propTypes = {
   currency: PropTypes.string.isRequired,
