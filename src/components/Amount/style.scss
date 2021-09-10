@@ -4,6 +4,8 @@
   background-color: vars.$color-light;
   padding: vars.$gutter * 3 0;
   text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 
   &__value {
     font-weight: bold;
