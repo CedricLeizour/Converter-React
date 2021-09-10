@@ -12,7 +12,6 @@ class Currencies extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {};
-    console.log('Currencies Constructor');
   }
 
   componentDidMount() {
@@ -40,8 +39,6 @@ class Currencies extends PureComponent {
       setCurrency,
       selectedCurrencyName,
     } = this.props;
-
-    console.log('Currencies render');
 
     return (
       <div className="currencies">

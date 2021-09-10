@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import './style.scss';
 
 // == Composant
-const Header = ({baseAmount}) => (
+const Header = ({ baseAmount }) => (
   <div className="header">
     <h1 className="header__title">Converter</h1>
     <p className="header__amount">{baseAmount}</p>
@@ -23,4 +23,4 @@ Header.defaultProps = {
 };
 
 // == Export
-export default Header
+export default Header;
