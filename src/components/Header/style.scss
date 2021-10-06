@@ -12,6 +12,11 @@
     font-size: 2em;
     font-weight: 700;
     margin-bottom: 1em;
+
+    @include vars.mobile {
+      
+      font-size: 1em;
+  }
   }
 
   &__amount { // .header__amount
@@ -19,11 +24,21 @@
     font-size: 1.3em;
     font-weight: bold;
     font-size: 2em;
+
+    @include vars.mobile {
+      
+      font-size: 1.5em;
+  }
   }
 
   &__value {
       font-size: 1.3em;
       margin-top: vars.$gutter;
+
+      @include vars.mobile {
+      
+        font-size: 1.2em;
+    }
     }
   }
 

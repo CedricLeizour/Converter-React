@@ -6,7 +6,14 @@
   margin: auto 0;
   text-align: center;
   padding: vars.$gutter;
+  justify-content: center;
   
+
+  @include vars.mobile {
+      
+    width: 300px;
+    padding: 2rem;
+}
 }
 
 .toggler {

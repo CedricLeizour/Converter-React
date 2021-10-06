@@ -3,4 +3,13 @@ $color-alt: #49c0f7;
 $color-light: #fff;
 $gutter: 0.8rem;
 $font: 'Spartan', sans-serif;
-$transition-fast: 0.2s
+$transition-fast: 0.2s;
+
+$width:767px;
+
+
+@mixin mobile {
+  @media (max-width: #{$width}){
+    @content
+  }
+}

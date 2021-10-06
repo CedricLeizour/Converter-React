@@ -7,13 +7,28 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 
+  @include vars.mobile {
+      
+    font-size: 1.5em;
+}
+
   &__value {
     font-weight: bold;
     font-size: 2em;
+
+    @include vars.mobile {
+      
+      font-size: 1em;
+  }
   }
 
   &__currency {
     font-size: 1.3em;
     margin-top: vars.$gutter;
+
+    @include vars.mobile {
+      
+      font-size: 0.8em;
+  }
   }
 }
